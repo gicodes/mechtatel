@@ -1,0 +1,66 @@
+.header {
+  background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-color: #1a1a1a;
+  background-size: cover;
+  color: white;
+  height: 420px;
+  width: 100%;
+}
+
+  .nav-header {
+  width: 100%;
+  display: flex;
+  padding: 10px 5px;
+  justify-content: space-between;
+}
+
+.logo-title { 
+  color: wheat;
+  font-size: 60px;
+  font-weight: 900;
+  font-family: fantasy;
+}
+  .logo-text {
+  font-size: 36px;
+  letter-spacing: 2px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.logo-subtext {
+  text-shadow:#ffffff;
+  color: silver;
+  font-size: 18px;
+}
+
+.rounded-circle { 
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.rounded-circle:hover { color: yellow; }
+
+.menu-stack {
+  gap: 75px;
+  padding: 20px;
+  display: flex;
+  padding: 20px 0;
+  color: darkgray;
+  font-weight: bold;
+}
+
+.drawer {
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100vh;
+  z-index: 9999;
+  position: fixed;
+  padding: 50px 25px;
+  background: #202020;
+}
+
+@media screen and (max-width: 768px) {
+.logo-title { font-size: 40px; }
+.logo-text { font-size: 25px; }
+.logo-subtext { font-size: 15px;}
+}

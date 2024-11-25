@@ -4,22 +4,24 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import { useState } from 'react';
 
+import './header.scss';
+
 const menuItems = [
   { 
     title: "About us", 
-    link: "/about-us"
+    link: "/#about-us"
   },
   { 
-    title: "Blog", 
-    link: "/blog"
+    title: "Services", 
+    link: "/#services"
   }, 
   { 
-    title: "Jobs", 
-    link: "/jobs"
+    title: "Projects", 
+    link: "/#projects"
   },
   { 
     title: "Contact us", 
-    link: "/contact-us"
+    link: "/#contact-us"
   },
 ]
 
@@ -27,7 +29,11 @@ const Header = () => {
   const [showNavExternal, setShowNavExternal] = useState(false);
 
   return (
-    <Navbar fixed='top' expand="lg" className="header">
+    <Navbar 
+      fixed="top"
+      expand="lg" 
+      className="header"
+    >
       <Container>
         <nav className='nav-header'>
           <div className="flex lg:hidden">
@@ -78,16 +84,20 @@ const Header = () => {
                 className="bg-dark -mt-2 rounded-circle"
                 onClick={()=> setShowNavExternal(false)}
               >
-                <span className='font-lg text-gray-400'>
-                  &times;
-                </span>
+                <span className='font-lg text-gray-400'> &times;</span>
               </button>
             </div>
 
             <div className='grid my-6'> {
               menuItems.map((item, index) => 
                 <p key={index} className='m-3'>
-                  <a key={index} href={item?.link}>{item?.title}</a>
+                  <a 
+                    key={index} 
+                    href={item?.link}
+                    onClick={() => setShowNavExternal(false)}
+                  >
+                    {item?.title}
+                  </a>
                 </p>
               )}
             </div>

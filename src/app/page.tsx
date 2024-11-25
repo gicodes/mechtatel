@@ -1,12 +1,7 @@
-// import Image from "next/image";
 import { Fragment } from "react";
-import Header from "./home/header";
-// import { Roboto } from 'next/font/google';
-
-// const roboto = Roboto({
-//   weight: '400',
-//   subsets: ['latin'],
-// })
+import Header from "./header/header";
+import { IntroCard } from "./home/introSection";
+import AboutCard from "./home/aboutSection";
 
 export default function Home() {
   return (
@@ -14,18 +9,23 @@ export default function Home() {
       <header>
         <Header />
       </header>
-
-      <main className="p-2">
-        <div className="">
-          <div className="card container">
-            <div className="card-header">
-              Impact Management
-            </div>
-          </div>
+      <main>
+        <div>
+          <IntroCard />
         </div>
+        <section id="about-us">
+          <AboutCard/>
+        </section>
+
+        <section id="services">
+
+        </section>
       </main>
 
-      <footer className="">
+      <footer>
+        <section id="contact-us">
+
+        </section>
       </footer>
     </Fragment>
   );
