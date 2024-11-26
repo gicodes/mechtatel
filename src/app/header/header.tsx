@@ -35,7 +35,7 @@ const Header = () => {
       expand="lg" 
       className="header"
     >
-      <Container>
+      <div>
         <nav className='nav-header'>
           <div className="flex lg:hidden">
             <button 
@@ -61,16 +61,16 @@ const Header = () => {
             </div>
           </div>
           
-          <div className='py-2 hover:text-green-400 mt-2'>
-            <IoNotificationsSharp size={25} color="white" />
+          <div className='py-3'>
+            <IoNotificationsSharp size={25} className='text-yellow-300' />
           </div>
         </nav>
-        <main className='justify-content-end'>
+        <div className='justify-content-end p-3'>
           <p className='mt-8 logo-subtext'>
             There&#39;s always the perfect candidate for that job...
           </p>
-        </main>
-      </Container>
+        </div>
+      </div>
 
       {showNavExternal && 
         <Container>

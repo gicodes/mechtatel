@@ -60,6 +60,8 @@ h6 { font-size: 20px; }
 .min-height-50 { min-height: 50px; }
 .min-height-100 { min-height: 100px; }
 
+.max-width-500 { max-width: 500px;}
+
 .y-center {
   display: grid;
   justify-self: center;
@@ -97,7 +99,7 @@ h6 { font-size: 20px; }
 .card {
   width: 100%;
   min-width: 360px;
-  max-width: 750px;
+  max-width: 600px;
   transition: 0.3s;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
