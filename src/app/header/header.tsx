@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { useState } from 'react';
 
 import './header.scss';
+import { IoNotificationsSharp } from 'react-icons/io5';
 
 const menuItems = [
   { 
@@ -46,6 +47,9 @@ const Header = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
             </button>
+            <div className='pl-5'>
+              <a className="logo-title" href='/'>M</a>
+            </div>
           </div>
 
           <div className='hidden lg:flex lg:gap-x-12 px-6'>
@@ -55,23 +59,16 @@ const Header = () => {
                 <a key={index} href={item?.link}>{item?.title}</a>
               )}
             </div>
-              
           </div>
-          <div className={'p-2'}>
-            <button className='border border-gray-600 rounded py-2 px-4 bg-gray-700 hover:bg-blue-900 text-yellow-300'>
-              <b>Get in Touch</b> 
-            </button>
+          
+          <div className='py-2 hover:text-green-400 mt-2'>
+            <IoNotificationsSharp size={25} color="white" />
           </div>
         </nav>
-        <main className={'justify-content-end'}>
-          <div className='text-center mt-8'>
-            <div className='card container'>
-              <p className={`logo-text`}>
-                <span className={`logo-title`}>M</span>echtatel</p>
-              <p className='logo-subtext'>There&#39;s always that perfect candidate for the job ...</p>
-              <br/>
-            </div>
-          </div>
+        <main className='justify-content-end'>
+          <p className='mt-8 logo-subtext'>
+            There&#39;s always the perfect candidate for that job...
+          </p>
         </main>
       </Container>
 

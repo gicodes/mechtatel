@@ -25,7 +25,7 @@ export const IntroCard = () => {
         <p>Working with Mechtatel will help you streamline your workforce management for superior reliability, and efficiency.
           We introduce our clients to a relevant, hand-picked audience using innovative practices and content strategies to elevate the conversation. 
         </p>
-        <div className="min-height-25"/>
+        <div className="min-height-50" />
         <button className="btn-success">Join our Online Community</button>
       </div>
     </div>

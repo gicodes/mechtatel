@@ -28,7 +28,7 @@ const AboutCard = () => {
           <h5>Vision</h5>
           <p>
             Through a focus on innovation, quality, and integrity, we ensure our client&#39;s organizations have access to top-tier talent, tailored training programs, 
-            and verified candidate information to support sustainable growt
+            and verified candidate information to support sustainable growth
           </p>
         </div>
       </div>
