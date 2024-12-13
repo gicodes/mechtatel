@@ -1,0 +1,45 @@
+.info-group {
+  width: 100%;
+  max-width: 666px;
+  padding: 20px 0;
+
+  h5 {
+    font-family: sans-serif;
+    margin: 10px 0;
+  }
+
+  .subscript {
+    color: #505050;
+    margin-top: 10px;
+    font-size: 12.5px;
+    margin-bottom: 20px;
+  }
+}
+
+.services-container {
+  margin: 30px 0 25px 0;
+  padding: 0 5%;
+
+  .stereo {
+    width: 300px;
+    margin: 10px 0;
+    font-size: 14px;
+    color: dimgray;
+    display: inline-flex;
+    justify-content: space-between;
+
+    .mod { 
+      display: flex;
+      margin-bottom: 20px;
+    }
+    span { padding: 0 10px;}
+  }
+
+
+}
+@media screen and (min-width: 768px) {
+  .services-container {
+    width: 100%;
+    max-width: 750px;
+  }
+}

@@ -45,7 +45,16 @@ h6 { font-size: 20px; }
   background: #000;
   color: #fff;
 }
-.bg-mirror { background-color: rgba(255,255,255,0.5); }
+.bg-calm {
+  background: lightgray;
+  color: #000;
+}
+.bg-white { 
+  background: #fff;
+  color: #000;
+}
+
+.bg-mirror { background-color: rgba(100,100,100,0.5); }
 .bg-trans-yell { background-color: rgba(180,180,200,0.5) }
 
 .font-xs { font-size: 10px; }
@@ -55,6 +64,22 @@ h6 { font-size: 20px; }
 
 .w-50 { width: 50%; }
 .w-100 { width: 100%; }
+.mw-500 { max-width: 500px; }
+
+@media screen and (max-width: 768px) {
+  p { font-size: 14px; }
+  h2 { font-size: 30px; }
+  h3 { font-size: 28px; }
+  h4 { font-size: 26px; }
+  h5 { font-size: 24px; }
+  h6 { font-size: 20px; }
+}
+
+.width-contained { margin: auto; }
+
+@media screen and (min-width: 768px) {
+  .width-contained { max-width: 1400px; }
+}
 
 .min-height-25 { min-height: 25px; }
 .min-height-50 { min-height: 50px; }
@@ -109,6 +134,16 @@ h6 { font-size: 20px; }
 .card-body {  
   margin: 30px 0 25px 0;
   padding: 0 5%;
+}
+
+.paper {
+  background-color: var(--background);
+  color: var(--foreground);
+  width: 100%;
+  min-width: 360px;
+  max-width: 600px;
+  transition: 0.3s;
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
 }
 
 .hidden { display: none;}

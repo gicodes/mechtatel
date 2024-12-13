@@ -1,11 +1,10 @@
 "use client";
 
+import { IoNotificationsSharp } from 'react-icons/io5';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import { useState } from 'react';
-
 import './header.scss';
-import { IoNotificationsSharp } from 'react-icons/io5';
 
 const menuItems = [
   { 
@@ -28,7 +27,6 @@ const menuItems = [
 
 const Header = () => {  
   const [showNavExternal, setShowNavExternal] = useState(false);
-
   return (
     <Navbar 
       fixed="top"
@@ -65,14 +63,14 @@ const Header = () => {
             <IoNotificationsSharp size={25} className='text-yellow-300' />
           </div>
         </nav>
-        <div className='justify-content-end p-3'>
-          <p className='mt-8 logo-subtext'>
+        <div className='logo-badge p-3'>
+          <p className='mt-8 logo-subtext p-3 bg-mirror'>
             There&#39;s always the perfect candidate for that job...
           </p>
         </div>
       </div>
 
-      {showNavExternal && 
+      { showNavExternal && 
         <Container>
           <div className='sm:hidden drawer'>
             <div className='justify-content-end'>

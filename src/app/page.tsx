@@ -1,32 +1,25 @@
 import { Fragment } from "react";
-import Header from "./header/header";
-import { IntroCard } from "./home/introSection";
 import AboutCard from "./home/aboutSection";
+import { IntroCard } from "./home/introSection";
+import ServicesCard from "./home/servicesSection";
 
 export default function Home() {
   return (
     <Fragment>
-      <header>
-        <Header />
-      </header>
-      <main>
+      <div className="width-contained">
         <div>
           <IntroCard />
         </div>
         <section id="about-us">
-          <AboutCard/>
+          <AboutCard />
         </section>
-
         <section id="services">
-
-        </section>
-      </main>
-
-      <footer>
+          <ServicesCard />
+        </section> 
         <section id="contact-us">
-
+          {/* <ContactUsCard /> */}
         </section>
-      </footer>
+      </div> 
     </Fragment>
   );
 }
