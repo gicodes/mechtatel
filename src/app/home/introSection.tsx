@@ -30,7 +30,10 @@ export const IntroCard = () => {
         </div>
         
         <div className="min-height-50" />
-        <button className="btn-success">Join our Online Community</button>
+        <button className="btn-success" // this button is missing a dynamic link to a i.e. group link, community link, etc.
+        >
+          Join our Online Community
+        </button>
       </div>
     </div>
   )
